@@ -80,9 +80,13 @@ public class Interface {
 				for(int j=0; j<q; j++){
 					 o = new Obra(bd.obra.get(j).getIdObra(),bd.obra.get(j).getNomeArtista(),bd.obra.get(j).getTipoObra(),bd.obra.get(j).getCategoriaObra(),bd.obra.get(j).getTipoObra(),bd.obra.get(j).getDataCriacao());
 					 obs.add(o);
+					 //bd.exposicao.get(i).setObrasExp(obs); 
+					 
 				}
 			}
 			
+		}else{
+			System.out.println("NAO EXISTEM OBRAS REGISTADAS...");
 		}
 		
 		
