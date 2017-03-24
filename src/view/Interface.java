@@ -32,7 +32,8 @@ public class Interface {
 		System.out.println(" 3 - REGISTAR EXPOSICAO");
 		System.out.println(" 4 - LISTAR EXPOSICAO   ");
 		System.out.println(" 5 - LISTAR EXPOSICAO POR ID  ");
-		System.out.println(" 6 - SAIR");
+		System.out.println(" 6 - LISTAR QUANTIDADE DE VISITANTES ");
+		System.out.println(" 7 - SAIR");
 		System.out.println();
 		System.out.println("    ESCOLHA UMA OPCAO");
 		System.out.println("\n\n");
@@ -102,6 +103,14 @@ public class Interface {
 		System.out.println("INSIRA O ID QUE PROCURA: ");
 		int id=n.nextInt();
 		exp.listarExposicao(id);
+	}
+	
+	
+	public void listarTor(){
+		for(int i=0; i<bd.torniquete.size();i++){
+			System.out.println("REGISTOS DE PASSAGENS: "+bd.torniquete.get(i).getQuantVisitante());
+		}
+		
 	}
 	
 }

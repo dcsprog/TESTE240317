@@ -43,9 +43,13 @@ public class App {
 				i.listarExpID();
 				break;
 			case 6:
+				i.listarTor();
+				break;
+			case 7:
 				verf=false;
 				break;
 			default:
+				System.out.println("OPCAO INVALIDA...");
 				break;
 			}
 		}while(verf);
